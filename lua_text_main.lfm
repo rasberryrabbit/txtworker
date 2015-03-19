@@ -1,0 +1,28 @@
+object Form1: TForm1
+  Left = 256
+  Height = 390
+  Top = 141
+  Width = 557
+  Caption = 'Form1'
+  ClientHeight = 390
+  ClientWidth = 557
+  LCLVersion = '1.3'
+  object Edit1: TEdit
+    Left = 8
+    Height = 23
+    Top = 8
+    Width = 528
+    TabOrder = 0
+    Text = 'Edit1'
+  end
+  object Memo1: TMemo
+    Left = 8
+    Height = 322
+    Top = 48
+    Width = 536
+    Lines.Strings = (
+      'Memo1'
+    )
+    TabOrder = 1
+  end
+end

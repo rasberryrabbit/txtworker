@@ -1,0 +1,193 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: luasyntax.syns_attrluamstring
+msgid "LuaMString"
+msgstr ""
+
+#: luasyntax.syns_attrnumber
+msgid "Numbers"
+msgstr ""
+
+#: luasyntax.syns_filterlua
+msgid "Lua Files (*.lua, *.lpr)|*.lua;*.lpr"
+msgstr ""
+
+#: luasyntax.syns_langlua
+msgid "Lua"
+msgstr ""
+
+#: tformlua.actioncopy.caption
+msgctxt "tformlua.actioncopy.caption"
+msgid "Copy"
+msgstr ""
+
+#: tformlua.actionexport.caption
+msgid "Save"
+msgstr ""
+
+#: tformlua.actionimport.caption
+msgid "Load"
+msgstr ""
+
+#: tformlua.actioninsregex.caption
+msgid "Insert RegEx"
+msgstr ""
+
+#: tformlua.actioninsregexmatch.caption
+msgid "Insert Regex Match"
+msgstr ""
+
+#: tformlua.actionrun.caption
+msgid "&Run"
+msgstr ""
+
+#: tformlua.actiontemphttp.caption
+msgid "Fill Templete"
+msgstr ""
+
+#: tformlua.caption
+msgid "TxtWorker"
+msgstr ""
+
+#: tformlua.editcodecomp1.caption
+msgid "Code Completion"
+msgstr ""
+
+#: tformlua.editcopy1.caption
+msgid "&Copy"
+msgstr ""
+
+#: tformlua.editcopy1.hint
+msgctxt "TFORMLUA.EDITCOPY1.HINT"
+msgid "Copy"
+msgstr ""
+
+#: tformlua.editcut1.caption
+msgid "Cu&t"
+msgstr ""
+
+#: tformlua.editcut1.hint
+msgid "Cut"
+msgstr ""
+
+#: tformlua.editdelete1.caption
+msgid "&Delete"
+msgstr ""
+
+#: tformlua.editdelete1.hint
+msgid "Delete"
+msgstr ""
+
+#: tformlua.editinsertpath.caption
+msgid "Insert File Path"
+msgstr ""
+
+#: tformlua.editpaste1.caption
+msgid "&Paste"
+msgstr ""
+
+#: tformlua.editpaste1.hint
+msgid "Paste"
+msgstr ""
+
+#: tformlua.editredo1.caption
+msgid "Redo"
+msgstr ""
+
+#: tformlua.editselectall1.caption
+msgid "Select &All"
+msgstr ""
+
+#: tformlua.editselectall1.hint
+msgid "Select All"
+msgstr ""
+
+#: tformlua.editundo1.caption
+msgid "&Undo"
+msgstr ""
+
+#: tformlua.editundo1.hint
+msgid "Undo"
+msgstr ""
+
+#: tformlua.fileexit1.caption
+msgid "E&xit"
+msgstr ""
+
+#: tformlua.fileexit1.hint
+msgid "Exit"
+msgstr ""
+
+#: tformlua.filenew1.caption
+msgid "New"
+msgstr ""
+
+#: tformlua.fileopen1.caption
+msgid "Open..."
+msgstr ""
+
+#: tformlua.filesaveas1.caption
+msgid "Save &As ..."
+msgstr ""
+
+#: tformlua.filesaveas1.hint
+msgid "Save As"
+msgstr ""
+
+#: tformlua.luareinstance.caption
+msgid "Reset Lua Instance"
+msgstr ""
+
+#: tformlua.menuitem1.caption
+msgid "&File"
+msgstr ""
+
+#: tformlua.menuitem12.caption
+msgid "&Edit"
+msgstr ""
+
+#: tformlua.menuitem32.caption
+msgid "L&ua"
+msgstr ""
+
+#: tformlua.menuitem7.caption
+msgid "&Script"
+msgstr ""
+
+#: tformlua.menuitem9.caption
+msgid "&Grid"
+msgstr ""
+
+#: txtworker_main.rsendscript
+msgid "***** End Script"
+msgstr ""
+
+#: txtworker_main.rslostyourscri
+msgid "Lost your script in Editor. Are you sure?"
+msgstr ""
+
+#: txtworker_main.rsluagrids
+msgid "TxtWorker - %s"
+msgstr ""
+
+#: txtworker_main.rsluainstancer
+msgid "***** Lua Instance ReInitialized."
+msgstr ""
+
+#: txtworker_main.rsscriptismodi
+msgid "Script is modified. Save changes?"
+msgstr ""
+
+#: txtworker_main.rsstartscript
+msgid "***** Start Script"
+msgstr ""
+
+#: txtworker_main.rsvregexregex2_
+msgid "Vregex=RegEx_New(pattern);%sVtxt,Vpos,Vlen=RegEx_Match(Vregex,text,1);%s--Dosomething...%sRegEx_Delete(Vregex);%s"
+msgstr ""
+
+#: txtworker_main.rsvregexregex_
+msgid "Vregex=RegEx_New(pattern);%sVtable=RegEx_MatchAll(Vregex,text);%s--Dosomething...%sRegEx_Delete(Vregex);%s"
+msgstr ""
+

@@ -1,0 +1,1122 @@
+object FormLua: TFormLua
+  Left = 256
+  Height = 450
+  Top = 141
+  Width = 747
+  Caption = 'TxtWorker'
+  ClientHeight = 430
+  ClientWidth = 747
+  Constraints.MinHeight = 450
+  Constraints.MinWidth = 600
+  Menu = MainMenu1
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnDropFiles = FormDropFiles
+  OnKeyDown = FormKeyDown
+  OnShow = FormShow
+  Position = poDefaultPosOnly
+  LCLVersion = '1.5'
+  object OMultiPanel1: TOMultiPanel
+    Left = 0
+    Height = 430
+    Top = 0
+    Width = 747
+    PanelType = ptVertical
+    PanelCollection = <    
+      item
+        Control = SynEdit1
+        Position = 0.4
+        Visible = True
+        Index = 0
+      end    
+      item
+        Control = Memo1
+        Position = 0.7
+        Visible = True
+        Index = 1
+      end    
+      item
+        Control = WorkGrid
+        Position = 1
+        Visible = True
+        Index = 2
+      end>
+    MinPosition = 0.02
+    Align = alClient
+    TabOrder = 0
+    inline SynEdit1: TSynEdit
+      Left = 0
+      Height = 172
+      Top = 0
+      Width = 747
+      Anchors = []
+      Constraints.MinHeight = 30
+      Font.Height = -13
+      Font.Name = 'Courier New'
+      Font.Pitch = fpFixed
+      Font.Quality = fqNonAntialiased
+      ParentColor = False
+      ParentFont = False
+      PopupMenu = PopupMenuEdit
+      TabOrder = 0
+      OnKeyDown = FormKeyDown
+      Gutter.Width = 57
+      Gutter.MouseActions = <>
+      RightGutter.Width = 0
+      RightGutter.MouseActions = <>
+      Keystrokes = <      
+        item
+          Command = ecUp
+          ShortCut = 38
+        end      
+        item
+          Command = ecSelUp
+          ShortCut = 8230
+        end      
+        item
+          Command = ecScrollUp
+          ShortCut = 16422
+        end      
+        item
+          Command = ecDown
+          ShortCut = 40
+        end      
+        item
+          Command = ecSelDown
+          ShortCut = 8232
+        end      
+        item
+          Command = ecScrollDown
+          ShortCut = 16424
+        end      
+        item
+          Command = ecLeft
+          ShortCut = 37
+        end      
+        item
+          Command = ecSelLeft
+          ShortCut = 8229
+        end      
+        item
+          Command = ecWordLeft
+          ShortCut = 16421
+        end      
+        item
+          Command = ecSelWordLeft
+          ShortCut = 24613
+        end      
+        item
+          Command = ecRight
+          ShortCut = 39
+        end      
+        item
+          Command = ecSelRight
+          ShortCut = 8231
+        end      
+        item
+          Command = ecWordRight
+          ShortCut = 16423
+        end      
+        item
+          Command = ecSelWordRight
+          ShortCut = 24615
+        end      
+        item
+          Command = ecPageDown
+          ShortCut = 34
+        end      
+        item
+          Command = ecSelPageDown
+          ShortCut = 8226
+        end      
+        item
+          Command = ecPageBottom
+          ShortCut = 16418
+        end      
+        item
+          Command = ecSelPageBottom
+          ShortCut = 24610
+        end      
+        item
+          Command = ecPageUp
+          ShortCut = 33
+        end      
+        item
+          Command = ecSelPageUp
+          ShortCut = 8225
+        end      
+        item
+          Command = ecPageTop
+          ShortCut = 16417
+        end      
+        item
+          Command = ecSelPageTop
+          ShortCut = 24609
+        end      
+        item
+          Command = ecLineStart
+          ShortCut = 36
+        end      
+        item
+          Command = ecSelLineStart
+          ShortCut = 8228
+        end      
+        item
+          Command = ecEditorTop
+          ShortCut = 16420
+        end      
+        item
+          Command = ecSelEditorTop
+          ShortCut = 24612
+        end      
+        item
+          Command = ecLineEnd
+          ShortCut = 35
+        end      
+        item
+          Command = ecSelLineEnd
+          ShortCut = 8227
+        end      
+        item
+          Command = ecEditorBottom
+          ShortCut = 16419
+        end      
+        item
+          Command = ecSelEditorBottom
+          ShortCut = 24611
+        end      
+        item
+          Command = ecToggleMode
+          ShortCut = 45
+        end      
+        item
+          Command = ecCopy
+          ShortCut = 16429
+        end      
+        item
+          Command = ecPaste
+          ShortCut = 8237
+        end      
+        item
+          Command = ecDeleteChar
+          ShortCut = 46
+        end      
+        item
+          Command = ecCut
+          ShortCut = 8238
+        end      
+        item
+          Command = ecDeleteLastChar
+          ShortCut = 8
+        end      
+        item
+          Command = ecDeleteLastChar
+          ShortCut = 8200
+        end      
+        item
+          Command = ecDeleteLastWord
+          ShortCut = 16392
+        end      
+        item
+          Command = ecUndo
+          ShortCut = 32776
+        end      
+        item
+          Command = ecRedo
+          ShortCut = 40968
+        end      
+        item
+          Command = ecLineBreak
+          ShortCut = 13
+        end      
+        item
+          Command = ecSelectAll
+          ShortCut = 16449
+        end      
+        item
+          Command = ecCopy
+          ShortCut = 16451
+        end      
+        item
+          Command = ecBlockIndent
+          ShortCut = 24649
+        end      
+        item
+          Command = ecLineBreak
+          ShortCut = 16461
+        end      
+        item
+          Command = ecInsertLine
+          ShortCut = 16462
+        end      
+        item
+          Command = ecDeleteWord
+          ShortCut = 16468
+        end      
+        item
+          Command = ecBlockUnindent
+          ShortCut = 24661
+        end      
+        item
+          Command = ecPaste
+          ShortCut = 16470
+        end      
+        item
+          Command = ecCut
+          ShortCut = 16472
+        end      
+        item
+          Command = ecDeleteLine
+          ShortCut = 16473
+        end      
+        item
+          Command = ecDeleteEOL
+          ShortCut = 24665
+        end      
+        item
+          Command = ecUndo
+          ShortCut = 16474
+        end      
+        item
+          Command = ecRedo
+          ShortCut = 24666
+        end      
+        item
+          Command = ecGotoMarker0
+          ShortCut = 16432
+        end      
+        item
+          Command = ecGotoMarker1
+          ShortCut = 16433
+        end      
+        item
+          Command = ecGotoMarker2
+          ShortCut = 16434
+        end      
+        item
+          Command = ecGotoMarker3
+          ShortCut = 16435
+        end      
+        item
+          Command = ecGotoMarker4
+          ShortCut = 16436
+        end      
+        item
+          Command = ecGotoMarker5
+          ShortCut = 16437
+        end      
+        item
+          Command = ecGotoMarker6
+          ShortCut = 16438
+        end      
+        item
+          Command = ecGotoMarker7
+          ShortCut = 16439
+        end      
+        item
+          Command = ecGotoMarker8
+          ShortCut = 16440
+        end      
+        item
+          Command = ecGotoMarker9
+          ShortCut = 16441
+        end      
+        item
+          Command = ecSetMarker0
+          ShortCut = 24624
+        end      
+        item
+          Command = ecSetMarker1
+          ShortCut = 24625
+        end      
+        item
+          Command = ecSetMarker2
+          ShortCut = 24626
+        end      
+        item
+          Command = ecSetMarker3
+          ShortCut = 24627
+        end      
+        item
+          Command = ecSetMarker4
+          ShortCut = 24628
+        end      
+        item
+          Command = ecSetMarker5
+          ShortCut = 24629
+        end      
+        item
+          Command = ecSetMarker6
+          ShortCut = 24630
+        end      
+        item
+          Command = ecSetMarker7
+          ShortCut = 24631
+        end      
+        item
+          Command = ecSetMarker8
+          ShortCut = 24632
+        end      
+        item
+          Command = ecSetMarker9
+          ShortCut = 24633
+        end      
+        item
+          Command = EcFoldLevel1
+          ShortCut = 41009
+        end      
+        item
+          Command = EcFoldLevel2
+          ShortCut = 41010
+        end      
+        item
+          Command = EcFoldLevel1
+          ShortCut = 41011
+        end      
+        item
+          Command = EcFoldLevel1
+          ShortCut = 41012
+        end      
+        item
+          Command = EcFoldLevel1
+          ShortCut = 41013
+        end      
+        item
+          Command = EcFoldLevel6
+          ShortCut = 41014
+        end      
+        item
+          Command = EcFoldLevel7
+          ShortCut = 41015
+        end      
+        item
+          Command = EcFoldLevel8
+          ShortCut = 41016
+        end      
+        item
+          Command = EcFoldLevel9
+          ShortCut = 41017
+        end      
+        item
+          Command = EcFoldLevel0
+          ShortCut = 41008
+        end      
+        item
+          Command = EcFoldCurrent
+          ShortCut = 41005
+        end      
+        item
+          Command = EcUnFoldCurrent
+          ShortCut = 41003
+        end      
+        item
+          Command = EcToggleMarkupWord
+          ShortCut = 32845
+        end      
+        item
+          Command = ecNormalSelect
+          ShortCut = 24654
+        end      
+        item
+          Command = ecColumnSelect
+          ShortCut = 24643
+        end      
+        item
+          Command = ecLineSelect
+          ShortCut = 24652
+        end      
+        item
+          Command = ecTab
+          ShortCut = 9
+        end      
+        item
+          Command = ecShiftTab
+          ShortCut = 8201
+        end      
+        item
+          Command = ecMatchBracket
+          ShortCut = 24642
+        end      
+        item
+          Command = ecColSelUp
+          ShortCut = 40998
+        end      
+        item
+          Command = ecColSelDown
+          ShortCut = 41000
+        end      
+        item
+          Command = ecColSelLeft
+          ShortCut = 40997
+        end      
+        item
+          Command = ecColSelRight
+          ShortCut = 40999
+        end      
+        item
+          Command = ecColSelPageDown
+          ShortCut = 40994
+        end      
+        item
+          Command = ecColSelPageBottom
+          ShortCut = 57378
+        end      
+        item
+          Command = ecColSelPageUp
+          ShortCut = 40993
+        end      
+        item
+          Command = ecColSelPageTop
+          ShortCut = 57377
+        end      
+        item
+          Command = ecColSelLineStart
+          ShortCut = 40996
+        end      
+        item
+          Command = ecColSelLineEnd
+          ShortCut = 40995
+        end      
+        item
+          Command = ecColSelEditorTop
+          ShortCut = 57380
+        end      
+        item
+          Command = ecColSelEditorBottom
+          ShortCut = 57379
+        end>
+      MouseActions = <>
+      MouseTextActions = <>
+      MouseSelActions = <>
+      Lines.Strings = (
+        'Grid_Clear();'
+        'Clear();'
+        'txt=GetHttpText(''http://www.daum.net'');'
+        'if not txt then'
+        'write(''error'')'
+        'end;'
+        'reg=RegEx_New(''(?is)<li\\s+class=\"rank_li[^\"]+?\"><div\\s+class=\"[^\"]+\"><a\\s+href=\"([^\"]+)\"(\\s+title=\"([^\"]+)\")?\\s+class=\"@\\d+\"([^>]+)?>(<strong>)?([^>]+)(</strong>)?</a><span\\s+class=\"[^\"]+\">([^>]+)</span>(<span\\s+class=\"[^\"]+\">([^>]+)</span>|)?</div></li>'');'
+        '--str,pos,len=RegEx_Match(reg,txt);'
+        '--print(str,pos,len);'
+        'res=RegEx_MatchAll(reg,txt);'
+        'xmax=res[''Col''];'
+        'ymax=res[''Row''];'
+        'for i=0,ymax do'
+        'for j=0,xmax do'
+        '  key=res[tostring(i)..'',''..tostring(j)];'
+        '  if key then'
+        '    Grid_Value(j,i,key);'
+        '  else'
+        '    break'
+        '  end;'
+        'end;'
+        'end;'
+        'RegEx_Delete(reg); '
+      )
+      VisibleSpecialChars = [vscSpace, vscTabAtLast]
+      SelectedColor.FrameEdges = sfeAround
+      SelectedColor.BackPriority = 50
+      SelectedColor.ForePriority = 50
+      SelectedColor.FramePriority = 50
+      SelectedColor.BoldPriority = 50
+      SelectedColor.ItalicPriority = 50
+      SelectedColor.UnderlinePriority = 50
+      SelectedColor.StrikeOutPriority = 50
+      IncrementColor.FrameEdges = sfeAround
+      HighlightAllColor.FrameEdges = sfeAround
+      BracketHighlightStyle = sbhsBoth
+      BracketMatchColor.Background = clNone
+      BracketMatchColor.Foreground = clNone
+      BracketMatchColor.FrameEdges = sfeAround
+      BracketMatchColor.Style = [fsBold]
+      FoldedCodeColor.Background = clNone
+      FoldedCodeColor.Foreground = clGray
+      FoldedCodeColor.FrameColor = clGray
+      FoldedCodeColor.FrameEdges = sfeAround
+      MouseLinkColor.Background = clNone
+      MouseLinkColor.Foreground = clBlue
+      MouseLinkColor.FrameEdges = sfeAround
+      LineHighlightColor.Background = clNone
+      LineHighlightColor.Foreground = clNone
+      LineHighlightColor.FrameEdges = sfeAround
+      inline SynLeftGutterPartList1: TSynGutterPartList
+        object SynGutterMarks1: TSynGutterMarks
+          Width = 24
+          MouseActions = <>
+        end
+        object SynGutterLineNumber1: TSynGutterLineNumber
+          Width = 17
+          MouseActions = <>
+          MarkupInfo.Background = clBtnFace
+          MarkupInfo.Foreground = clNone
+          MarkupInfo.FrameEdges = sfeAround
+          DigitCount = 2
+          ShowOnlyLineNumbersMultiplesOf = 1
+          ZeroStart = False
+          LeadingZeros = False
+        end
+        object SynGutterChanges1: TSynGutterChanges
+          Width = 4
+          MouseActions = <>
+          ModifiedColor = 59900
+          SavedColor = clGreen
+        end
+        object SynGutterSeparator1: TSynGutterSeparator
+          Width = 2
+          MouseActions = <>
+          MarkupInfo.Background = clWhite
+          MarkupInfo.Foreground = clGray
+          MarkupInfo.FrameEdges = sfeAround
+        end
+        object SynGutterCodeFolding1: TSynGutterCodeFolding
+          MouseActions = <>
+          MarkupInfo.Background = clNone
+          MarkupInfo.Foreground = clGray
+          MarkupInfo.FrameEdges = sfeAround
+          MouseActionsExpanded = <>
+          MouseActionsCollapsed = <>
+        end
+      end
+    end
+    object Memo1: TMemo
+      Left = 0
+      Height = 126
+      Top = 175
+      Width = 747
+      Anchors = []
+      OnKeyDown = FormKeyDown
+      ReadOnly = True
+      ScrollBars = ssAutoVertical
+      TabOrder = 1
+    end
+    object WorkGrid: TStringGrid
+      Left = 0
+      Height = 126
+      Top = 304
+      Width = 747
+      Anchors = []
+      ColumnClickSorts = True
+      Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goEditing, goTabs, goDblClickAutoSize, goSmoothScroll, goFixedRowNumbering, goHeaderPushedLook, goFixedColSizing, goTruncCellHints]
+      PopupMenu = PopupMenuGrid
+      TabOrder = 2
+      OnCompareCells = WorkGridCompareCells
+      OnKeyDown = FormKeyDown
+    end
+  end
+  object MainMenu1: TMainMenu
+    left = 192
+    top = 200
+    object MenuItem1: TMenuItem
+      Caption = '&File'
+      object MenuItem22: TMenuItem
+        Action = FileNew1
+      end
+      object MenuItem3: TMenuItem
+        Action = FileOpen1
+      end
+      object MenuItem4: TMenuItem
+        Action = FileSaveAs1
+      end
+      object MenuItem5: TMenuItem
+        Action = FileExit1
+      end
+    end
+    object MenuItem12: TMenuItem
+      Caption = '&Edit'
+      object MenuItem13: TMenuItem
+        Action = EditUndo1
+      end
+      object MenuItem19: TMenuItem
+        Action = EditRedo1
+      end
+      object MenuItem14: TMenuItem
+        Action = EditCopy1
+      end
+      object MenuItem15: TMenuItem
+        Action = EditCut1
+      end
+      object MenuItem16: TMenuItem
+        Action = EditDelete1
+      end
+      object MenuItem17: TMenuItem
+        Action = EditPaste1
+      end
+      object MenuItem18: TMenuItem
+        Action = EditSelectAll1
+      end
+      object MenuItem31: TMenuItem
+        Action = EditCodeComp1
+      end
+      object MenuItem35: TMenuItem
+        Action = EditInsertPath
+      end
+    end
+    object MenuItem2: TMenuItem
+      Action = ActionRun
+    end
+    object MenuItem7: TMenuItem
+      Caption = '&Script'
+      object MenuItem8: TMenuItem
+        Action = ActionTempHttp
+      end
+      object MenuItem20: TMenuItem
+        Action = ActionInsRegex
+      end
+      object MenuItem21: TMenuItem
+        Action = ActionInsRegexMatch
+      end
+    end
+    object MenuItem9: TMenuItem
+      Caption = '&Grid'
+      object MenuItem10: TMenuItem
+        Action = ActionImport
+      end
+      object MenuItem11: TMenuItem
+        Action = ActionExport
+      end
+    end
+    object MenuItem32: TMenuItem
+      Caption = 'L&ua'
+      object MenuItem33: TMenuItem
+        Action = LuaReInstance
+      end
+    end
+  end
+  object ActionList1: TActionList
+    left = 264
+    top = 200
+    object FileSaveAs1: TFileSaveAs
+      Category = 'File'
+      Caption = 'Save &As ...'
+      Dialog.DefaultExt = '.lua'
+      Dialog.Filter = 'lua,txt|*.lua;*.txt|all files|*.*'
+      Hint = 'Save As'
+      ShortCut = 16467
+      OnAccept = FileSaveAs1Accept
+    end
+    object FileExit1: TFileExit
+      Category = 'File'
+      Caption = 'E&xit'
+      Hint = 'Exit'
+    end
+    object ActionRun: TAction
+      Category = 'Run'
+      Caption = '&Run'
+      OnExecute = ActionRunExecute
+    end
+    object ActionCopy: TAction
+      Category = 'Grid'
+      Caption = 'Copy'
+      OnExecute = ActionCopyExecute
+    end
+    object ActionTempHttp: TAction
+      Category = 'Script'
+      Caption = 'Fill Templete'
+      OnExecute = ActionTempHttpExecute
+    end
+    object ActionExport: TAction
+      Category = 'Grid'
+      Caption = 'Save'
+      OnExecute = ActionExportExecute
+    end
+    object ActionImport: TAction
+      Category = 'Grid'
+      Caption = 'Load'
+      OnExecute = ActionImportExecute
+    end
+    object EditCut1: TEditCut
+      Category = 'Edit'
+      Caption = 'Cu&t'
+      Hint = 'Cut'
+      OnExecute = EditCut1Execute
+      ShortCut = 16472
+    end
+    object EditCopy1: TEditCopy
+      Category = 'Edit'
+      Caption = '&Copy'
+      Hint = 'Copy'
+      OnExecute = EditCopy1Execute
+      ShortCut = 16451
+    end
+    object EditPaste1: TEditPaste
+      Category = 'Edit'
+      Caption = '&Paste'
+      Hint = 'Paste'
+      OnExecute = EditPaste1Execute
+      OnUpdate = EditPaste1Update
+      ShortCut = 16470
+    end
+    object EditSelectAll1: TEditSelectAll
+      Category = 'Edit'
+      Caption = 'Select &All'
+      Hint = 'Select All'
+      OnExecute = EditSelectAll1Execute
+      ShortCut = 16449
+    end
+    object EditUndo1: TEditUndo
+      Category = 'Edit'
+      Caption = '&Undo'
+      Hint = 'Undo'
+      OnExecute = EditUndo1Execute
+      OnUpdate = EditUndo1Update
+      ShortCut = 16474
+    end
+    object EditDelete1: TEditDelete
+      Category = 'Edit'
+      Caption = '&Delete'
+      Hint = 'Delete'
+      OnExecute = EditDelete1Execute
+      ShortCut = 46
+    end
+    object EditRedo1: TAction
+      Category = 'Edit'
+      Caption = 'Redo'
+      OnExecute = EditRedo1Execute
+      OnUpdate = EditRedo1Update
+    end
+    object ActionInsRegex: TAction
+      Category = 'Script'
+      Caption = 'Insert RegEx'
+      OnExecute = ActionInsRegexExecute
+    end
+    object ActionInsRegexMatch: TAction
+      Category = 'Script'
+      Caption = 'Insert Regex Match'
+      OnExecute = ActionInsRegexMatchExecute
+    end
+    object FileNew1: TAction
+      Category = 'File'
+      Caption = 'New'
+      OnExecute = FileNew1Execute
+    end
+    object FileOpen1: TAction
+      Category = 'File'
+      Caption = 'Open...'
+      OnExecute = FileOpen1Execute
+      ShortCut = 16463
+    end
+    object EditCodeComp1: TAction
+      Category = 'Edit'
+      Caption = 'Code Completion'
+      OnExecute = EditCodeComp1Execute
+      ShortCut = 16416
+    end
+    object LuaReInstance: TAction
+      Category = 'Lua'
+      Caption = 'Reset Lua Instance'
+      OnExecute = LuaReInstanceExecute
+    end
+    object EditInsertPath: TAction
+      Category = 'Edit'
+      Caption = 'Insert File Path'
+      OnExecute = EditInsertPathExecute
+    end
+  end
+  object PopupMenuGrid: TPopupMenu
+    left = 448
+    top = 352
+    object MenuItem6: TMenuItem
+      Action = ActionCopy
+    end
+  end
+  object SaveDialog1: TSaveDialog
+    DefaultExt = '.csv'
+    Filter = 'csv|*.csv|text|*.txt|text and csv|*.sav;*.txt|all files|*.*'
+    left = 120
+    top = 200
+  end
+  object OpenDialog1: TOpenDialog
+    DefaultExt = '.csv'
+    Filter = 'csv|*.csv|text|*.txt|text and csv|*.sav;*.txt|all files|*.*'
+    left = 56
+    top = 200
+  end
+  object StrHolder1: TStrHolder
+    Capacity = 64
+    Macros = <>
+    left = 352
+    top = 160
+    StrData = (
+      ''
+      '477269645f436c65617228293b'
+      '7478743d47657448747470546578742827687474703a2f2f7777772e6461756d2e6e657427293b'
+      '6966206e6f7420747874207468656e'
+      '777269746528276572726f722729'
+      '656e643b'
+      '7265673d52656745785f4e65772827283f69293c7370616e285c5c732b293f636c6173733d5c227478745f69737375655c223e285c5c732b293f3c6120687265663d5c225b5e5c225d2b5c2220636c6173733d5c225b5e5c225d2b5c223e285c5c732b293f285c5c532b2927293b'
+      '7265733d52656745785f4d61746368416c6c287265672c747874293b'
+      '786d61783d7265735b27436f6c275d3b'
+      '796d61783d7265735b27526f77275d3b'
+      '666f7220693d302c796d617820646f'
+      '666f72206a3d302c786d617820646f'
+      '20206b65793d7265735b746f737472696e672869292e2e272c272e2e746f737472696e67286a295d3b'
+      '20206966206b6579207468656e'
+      '20202020477269645f56616c7565286a2c692c6b6579293b'
+      '2020656c7365'
+      '20202020627265616b'
+      '2020656e643b'
+      '656e643b'
+      '656e643b'
+      '52656745785f44656c65746528726567293b2020'
+    )
+  end
+  object SynCompletion1: TSynCompletion
+    ItemList.Strings = (
+      'Abort()'
+      'assert(v [, message])'
+      'Base64Decode(s)'
+      'Base64Encode(s)'
+      'bit32.arshift(x, disp)'
+      'bit32.band(···)'
+      'bit32.bnot(x)'
+      'bit32.bor(···)'
+      'bit32.btest(···)'
+      'bit32.bxor(···)'
+      'bit32.extract(n, field [, width])'
+      'bit32.lrotate(x, disp)'
+      'bit32.lshift(x, disp)'
+      'bit32.replace(n, v, field [, width])'
+      'bit32.rrotate(x, disp)'
+      'bit32.rshift(x, disp)'
+      'ChDir(s)'
+      'Check_KeyPress([wait]) -- keycode'
+      'Clear()'
+      'CloseApp()'
+      'collectgarbage([opt [, arg]])'
+      'coroutine.create(f)'
+      'coroutine.resume(co [, val1, ···])'
+      'coroutine.running()'
+      'coroutine.status(co)'
+      'coroutine.wrap(f)'
+      'coroutine.yield(···)'
+      'CRC16(s)'
+      'CRC32(s)'
+      'CSVDelimiter'
+      'error(message [, level])'
+      'ExistFile(filename)'
+      'ExtractFileExt'
+      'ExtractFilename'
+      'ExtractFilePath'
+      'file:close()'
+      'file:flush()'
+      'file:lines(···)'
+      'file:read(···)'
+      'file:seek([whence [, offset]])'
+      'file:setvbuf(mode [, size])'
+      'file:write(···)'
+      'Find_FileAttr(obj)'
+      'Find_FileClose(obj)'
+      'Find_FileFirst(path[,flag])'
+      'Find_FileName(obj) -- fullname'
+      'Find_FileNext(obj)'
+      'Find_FolderAttr(obj)'
+      'Find_FolderClose(obj)'
+      'Find_FolderFirst(path[,recursive])'
+      'Find_FolderName(obj) -- fullname'
+      'Find_FolderNext(obj)'
+      'GetError()'
+      'GetErrorMsg()'
+      'GetHttpsText(url) -- string result'
+      'GetHttpText(url)'
+      'GetLongestMatchStr(str1,str2)'
+      'GetLongestMatchStrW(s1,s2)'
+      'getmetatable(object)'
+      'Grid_AutoColumn() -- col : column'
+      'Grid_Clear()'
+      'Grid_ColRow(i,j)'
+      'Grid_DeleteCol(i)'
+      'Grid_DeleteRow(i)'
+      'Grid_FromTable(table)'
+      'Grid_Load(filename[,csv])'
+      'Grid_LoadExcel(filename[,index])'
+      'Grid_LoadStr(str,delimiter)'
+      'Grid_Save(filename[,csv])'
+      'Grid_SaveExcel(filename[, type]) -- type 0=excel,1=open doc,2=ooxml'
+      'Grid_SaveStr(delimiter)'
+      'Grid_SortCol(col)'
+      'Grid_ToTable()'
+      'Grid_Value(i,j[,s])'
+      'HWP_ReadText(filename)'
+      'InputBox(msg[,title]) -- string'
+      'io.close([file])'
+      'io.flush()'
+      'io.input([file])'
+      'io.lines([filename ···])'
+      'io.open(filename [, mode])'
+      'io.output([file])'
+      'io.popen(prog [, mode])'
+      'io.read(···)'
+      'io.tmpfile()'
+      'io.type(obj)'
+      'io.write(···)'
+      'ipairs(t)'
+      'math.abs(x)'
+      'math.acos(x)'
+      'math.asin(x)'
+      'math.atan(x)'
+      'math.atan2(y, x)'
+      'math.ceil(x)'
+      'math.cos(x)'
+      'math.cosh(x)'
+      'math.deg(x)'
+      'math.exp(x)'
+      'math.floor(x)'
+      'math.fmod(x, y)'
+      'math.frexp(x)'
+      'math.huge'
+      'math.ldexp(m, e)'
+      'math.log(x [, base])'
+      'math.max(x, ···)'
+      'math.min(x, ···)'
+      'math.modf(x)'
+      'math.pi'
+      'math.pow(x, y)'
+      'math.rad(x)'
+      'math.random([m [, n]])'
+      'math.randomseed(x)'
+      'math.sin(x)'
+      'math.sinh(x)'
+      'math.sqrt(x)'
+      'math.tan(x)'
+      'math.tanh(x)'
+      'MD5(s)'
+      'MkDir(s)'
+      'next(table [, index])'
+      'os.clock()'
+      'os.date([format [, time]])'
+      'os.difftime(t2, t1)'
+      'os.execute([command])'
+      'os.exit([code [, close])'
+      'os.getenv(varname)'
+      'os.remove(filename)'
+      'os.rename(oldname, newname)'
+      'os.setlocale(locale [, category])'
+      'os.time([table])'
+      'os.tmpname()'
+      'package.config'
+      'package.cpath'
+      'package.loaded'
+      'package.loadlib(libname, funcname)'
+      'package.path'
+      'package.preload'
+      'package.searchers'
+      'package.searchpath(name, path [, sep [, rep]])'
+      'pairs(t)'
+      'pcall(f [, arg1, ···])'
+      'PostHttpText(url,data)'
+      'QueryBoxYesNo(msg,title[,0|1]) -- return boolean'
+      'QueryBoxYesNoCancel(msg,title[,0|1|2) -- return 0|1|2'
+      'rawequal(v1, v2)'
+      'rawget(table, index)'
+      'rawlen(v)'
+      'rawset(table, index, value)'
+      'ReadFile(filename)'
+      'RegEx_Delete(regex)'
+      'RegEx_Match(regex,s[,pos]) -- return str,pos,len'
+      'RegEx_MatchAll(regex,s) -- return table'
+      'RegEx_MatchAllCSV(regex,str,isutf8) -- ret str'
+      'RegEx_New(expression)'
+      'RegEx_Replace(regex,s,repstr)'
+      'require(modname)'
+      'RmDir(s)'
+      'RSS_Read(url[,0|1|2])'
+      'select(index, ···)'
+      'setmetatable(table, metatable)'
+      'SHA1(s)'
+      'SolveFormula(formula)'
+      'string.byte(s [, i [, j]])'
+      'string.char(···)'
+      'string.dump(function)'
+      'string.find(s, pattern [, init [, plain]])'
+      'string.format(formatstring, ···)'
+      'string.gmatch(s, pattern)'
+      'string.gsub(s, pattern, repl [, n])'
+      'string.len(s)'
+      'string.lower(s)'
+      'string.match(s, pattern [, init])'
+      'string.rep(s, n [, sep])'
+      'string.reverse(s)'
+      'string.sub(s, i [, j])'
+      'string.upper(s)'
+      'table.concat(list [, sep [, i [, j]]])'
+      'table.insert(list, [pos,] value)'
+      'table.pack(···)'
+      'table.remove(list [, pos])'
+      'table.sort(list [, comp])'
+      'table.unpack(list [, i [, j]])'
+      'tonumber(e [, base])'
+      'tostring(v)'
+      'type(v)'
+      'URLDecode(s)'
+      'URLEncode(s)'
+      'UTF8Decode(s)'
+      'UTF8Encode(s)'
+      'UTF8FileMode(mode) -- 0=ansi, 1=UTF8(default)'
+      'UTF8StringMode(mode) -- 0=ansi, 1=UTF8(default)'
+      'write(...)'
+      'WriteFile(filename,s)'
+      'xpcall(f, msgh [, arg1, ···])'
+      'Zip_Add(fname,basedir,files[,password,subdir=1]) -- bool'
+      'Zip_AddText(fname,basedir,name,text[,password,subdir]) -- bool'
+      'Zip_Delete(fname,basedir,files[,password,subdir=1]) -- bool'
+      'Zip_Extract(fname,basedir,files[,password,subdir=1]) -- bool'
+      'Zip_ExtractText(fname,basedir,name[,password,subdir=1]) -- str'
+      'Zip_Freshen(fname,basedir,files[,password,subdir=1]) -- bool'
+      '_G'
+    )
+    Position = 0
+    LinesInWindow = 6
+    SelectedColor = clHighlight
+    CaseSensitive = False
+    Width = 262
+    ShortCut = 16416
+    EndOfTokenChr = '()[];+-*/%=''":{}~`!@#$^,?'
+    OnCodeCompletion = SynCompletion1CodeCompletion
+    ExecCommandID = ecSynCompletionExecute
+    Editor = SynEdit1
+    left = 448
+    top = 160
+  end
+  object FileOpenDlg: TOpenDialog
+    DefaultExt = '.lua'
+    Filter = 'lua,txt|*.lua;*.txt|all files|*.*'
+    left = 56
+    top = 248
+  end
+  object PopupMenuEdit: TPopupMenu
+    left = 536
+    top = 160
+    object MenuItem23: TMenuItem
+      Action = EditCopy1
+    end
+    object MenuItem24: TMenuItem
+      Action = EditCut1
+    end
+    object MenuItem25: TMenuItem
+      Action = EditDelete1
+    end
+    object MenuItem26: TMenuItem
+      Action = EditPaste1
+    end
+    object MenuItem29: TMenuItem
+      Action = EditSelectAll1
+    end
+    object MenuItem27: TMenuItem
+      Action = EditUndo1
+    end
+    object MenuItem28: TMenuItem
+      Action = EditRedo1
+    end
+    object MenuItem30: TMenuItem
+      Action = EditCodeComp1
+    end
+    object MenuItem34: TMenuItem
+      Action = EditInsertPath
+    end
+  end
+  object EditPathDlg: TSelectDirectoryDialog
+    left = 384
+    top = 232
+  end
+end

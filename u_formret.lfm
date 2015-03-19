@@ -1,0 +1,18 @@
+object Form1: TForm1
+  Left = 269
+  Height = 490
+  Top = 163
+  Width = 708
+  Caption = 'Result'
+  ClientHeight = 490
+  ClientWidth = 708
+  LCLVersion = '1.3'
+  object sWorksheetGrid1: TsWorksheetGrid
+    Left = 8
+    Height = 474
+    Top = 8
+    Width = 695
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    TabOrder = 0
+  end
+end
