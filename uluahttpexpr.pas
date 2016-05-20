@@ -146,7 +146,7 @@ procedure GridSaveCSVFile(const Filename: string; const delimiter: char; UseUTF8
 implementation
 
 uses httpsend, synacode, BRRE, uhwpfile, EasyRSS, txtworker_main,
-  fpspreadsheet, fpsallformats, uluaFindFile, Controls, StdCtrls, Dialogs,
+  fpspreadsheet, fpsTypes {1.4}, fpsallformats, uluaFindFile, Controls, StdCtrls, Dialogs,
   Buttons, Forms, AbZipper, AbUnzper, AbArcTyp, AbZipTyp, uSimplefmParser,
   CsvDocument, ssl_openssl, ssl_openssl_lib;
 
@@ -426,7 +426,7 @@ end;
 constructor TLuaHttpExpr.Create(AutoRegister: Boolean);
 begin
   inherited Create(False);
-  luaL_openlibs(LuaInstance);
+  //luaL_openlibs(LuaInstance);
   if AutoRegister then
     AutoRegisterFunctions(self);
   FObjList:=TObjectList.create(True);
@@ -2523,6 +2523,13 @@ begin
           if FindExcelFile(fname) then begin
             workbk.ReadFromFile(fname);
             worksht:=workbk.GetWorksheetByIndex(sindex);
+            for lCell in worksht.Cells do begin
+              i:=lCell^.Col;
+              j:=lCell^.Row;
+              temp:=worksht.ReadAsUTF8Text(j,i);
+              StrGrid_SetValue(i+1,j+1,temp,False);
+            end;
+            (* 1.41
             lCell:=worksht.GetFirstCell();
             for k:=0 to worksht.GetCellCount-1 do begin
               i:=lCell^.Col;
@@ -2531,6 +2538,7 @@ begin
               StrGrid_SetValue(i+1,j+1,temp,False);
               lCell:=worksht.GetNextCell();
             end;
+            *)
           end else
             lastError:=2;
         finally
