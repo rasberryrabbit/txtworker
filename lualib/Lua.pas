@@ -137,7 +137,12 @@ begin
   {$ELSE}
   LuaInstance := luaL_newstate;
   {$ENDIF}
+  // open all libs
+  {$ifndef LUAOpenLIBS}
   luaopen_base(LuaInstance);
+  {$else}
+  luaL_openlibs(LuaInstance);
+  {$endif}
 
   fAutoRegister := AutoRegister;
 
