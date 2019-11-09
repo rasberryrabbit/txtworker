@@ -17,148 +17,6 @@ msgstr ""
 msgid "Lua"
 msgstr ""
 
-#: tformlua.actioncopy.caption
-msgctxt "tformlua.actioncopy.caption"
-msgid "Copy"
-msgstr "복사"
-
-#: tformlua.actionexport.caption
-msgid "Save"
-msgstr "저장"
-
-#: tformlua.actionimport.caption
-msgid "Load"
-msgstr "불러오기"
-
-#: tformlua.actioninsregex.caption
-msgid "Insert RegEx"
-msgstr ""
-
-#: tformlua.actioninsregexmatch.caption
-msgid "Insert Regex Match"
-msgstr ""
-
-#: tformlua.actionrun.caption
-msgid "&Run"
-msgstr "실행(&R)"
-
-#: tformlua.actiontemphttp.caption
-msgid "Fill Templete"
-msgstr ""
-
-#: tformlua.caption
-msgid "TxtWorker"
-msgstr ""
-
-#: tformlua.editcodecomp1.caption
-msgid "Code Completion"
-msgstr "자동완성"
-
-#: tformlua.editcopy1.caption
-msgid "&Copy"
-msgstr "복사(&C)"
-
-#: tformlua.editcopy1.hint
-msgctxt "TFORMLUA.EDITCOPY1.HINT"
-msgid "Copy"
-msgstr "복사"
-
-#: tformlua.editcut1.caption
-msgid "Cu&t"
-msgstr "잘라내기(&t)"
-
-#: tformlua.editcut1.hint
-msgid "Cut"
-msgstr ""
-
-#: tformlua.editdelete1.caption
-msgid "&Delete"
-msgstr "지우기(&D)"
-
-#: tformlua.editdelete1.hint
-msgid "Delete"
-msgstr ""
-
-#: tformlua.editinsertpath.caption
-msgid "Insert File Path"
-msgstr ""
-
-#: tformlua.editpaste1.caption
-msgid "&Paste"
-msgstr "붙여넣기(&P)"
-
-#: tformlua.editpaste1.hint
-msgid "Paste"
-msgstr ""
-
-#: tformlua.editredo1.caption
-msgid "Redo"
-msgstr "다시 되돌림"
-
-#: tformlua.editselectall1.caption
-msgid "Select &All"
-msgstr "모두 선택(&A)"
-
-#: tformlua.editselectall1.hint
-msgid "Select All"
-msgstr ""
-
-#: tformlua.editundo1.caption
-msgid "&Undo"
-msgstr "되돌리기(&U)"
-
-#: tformlua.editundo1.hint
-msgid "Undo"
-msgstr ""
-
-#: tformlua.fileexit1.caption
-msgid "E&xit"
-msgstr "나가기(&x)"
-
-#: tformlua.fileexit1.hint
-msgid "Exit"
-msgstr ""
-
-#: tformlua.filenew1.caption
-msgid "New"
-msgstr "새 스크립트"
-
-#: tformlua.fileopen1.caption
-msgid "Open..."
-msgstr "열기..."
-
-#: tformlua.filesaveas1.caption
-msgid "Save &As ..."
-msgstr "새로운 이름으로 저장(&A) ..."
-
-#: tformlua.filesaveas1.hint
-msgid "Save As"
-msgstr ""
-
-#: tformlua.luareinstance.caption
-msgid "Reset Lua Instance"
-msgstr "루아 인스턴스 초기화"
-
-#: tformlua.menuitem1.caption
-msgid "&File"
-msgstr "파일(&F)"
-
-#: tformlua.menuitem12.caption
-msgid "&Edit"
-msgstr "편집(&E)"
-
-#: tformlua.menuitem32.caption
-msgid "L&ua"
-msgstr "루아(&u)"
-
-#: tformlua.menuitem7.caption
-msgid "&Script"
-msgstr "스크립트(&S)"
-
-#: tformlua.menuitem9.caption
-msgid "&Grid"
-msgstr "그리드(&G)"
-
 #: txtworker_main.rsendscript
 msgid "***** End Script"
 msgstr "***** 스크립트 끝"
@@ -168,6 +26,7 @@ msgid "Lost your script in Editor. Are you sure?"
 msgstr "편집기의 스크립트를 잃습니다. 계속 하시겠습니까?"
 
 #: txtworker_main.rsluagrids
+#, object-pascal-format
 msgid "TxtWorker - %s"
 msgstr ""
 
@@ -184,10 +43,12 @@ msgid "***** Start Script"
 msgstr "***** 스크립트 시작"
 
 #: txtworker_main.rsvregexregex2_
-msgid "Vregex=RegEx_New(pattern);%sVtxt,Vpos,Vlen=RegEx_Match(Vregex,text,1);%s--Dosomething...%sRegEx_Delete(Vregex);%s"
+#, object-pascal-format
+msgid "Vregex=RegEx_New(pattern);%sVtxt,Vpos,Vlen=RegEx_Match(Vregex,text,1);%sDosomething...%sRegEx_Delete(Vregex);%s"
 msgstr ""
 
 #: txtworker_main.rsvregexregex_
-msgid "Vregex=RegEx_New(pattern);%sVtable=RegEx_MatchAll(Vregex,text);%s--Dosomething...%sRegEx_Delete(Vregex);%s"
+#, object-pascal-format
+msgid "Vregex=RegEx_New(pattern);%sVtable=RegEx_MatchAll(Vregex,text);%sDosomething...%sRegEx_Delete(Vregex);%s"
 msgstr ""
 

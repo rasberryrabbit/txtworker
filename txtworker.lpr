@@ -7,7 +7,7 @@ uses
   cthreads,
   {$ENDIF}{$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, rx, txtworker_main, LuaSyntax, uluaFindFile
+  Forms, txtworker_main, LuaSyntax, uluaFindFile
   { you can add units after this };
 
 {$R *.res}

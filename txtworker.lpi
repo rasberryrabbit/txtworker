@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CONFIG>
   <ProjectOptions>
-    <Version Value="9"/>
+    <Version Value="12"/>
     <PathDelim Value="\"/>
     <General>
+      <Flags>
+        <CompatibilityMode Value="True"/>
+      </Flags>
       <SessionStorage Value="InProjectDir"/>
-      <MainUnit Value="0"/>
       <Title Value="txtworker"/>
       <ResourceType Value="res"/>
       <UseXPManifest Value="True"/>
@@ -14,9 +16,6 @@
     <i18n>
       <EnableI18N Value="True"/>
     </i18n>
-    <VersionInfo>
-      <StringTable ProductVersion=""/>
-    </VersionInfo>
     <BuildModes Count="2">
       <Item1 Name="Default" Default="True"/>
       <Item2 Name="release">
@@ -28,7 +27,7 @@
           </Target>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
-            <OtherUnitFiles Value="..\Lib;..\..\hwpunit;..\..\literss;C:\development\extras\synapsetrunk\;C:\development\extras\fpspreadsheet\;C:\development\extras\tpabbrevia\source\;..\..\mpa;..\..\bigcalc;..\..\csvdocument"/>
+            <OtherUnitFiles Value="..\Lib;..\..\hwpunit;..\..\literss;C:\development\extras\synapsetrunk\;C:\development\extras\fpspreadsheet\source\common\;C:\development\extras\tpabbrevia\source\;..\..\mpa;..\..\bigcalc;..\..\csvdocument"/>
             <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
           </SearchPaths>
           <CodeGeneration>
@@ -53,23 +52,21 @@
       <Version Value="2"/>
     </PublishOptions>
     <RunParams>
-      <local>
-        <FormatVersion Value="1"/>
-      </local>
+      <FormatVersion Value="2"/>
+      <Modes Count="1">
+        <Mode0 Name="default"/>
+      </Modes>
     </RunParams>
-    <RequiredPackages Count="4">
+    <RequiredPackages Count="3">
       <Item1>
         <PackageName Value="OMultiPanel_Design"/>
       </Item1>
       <Item2>
-        <PackageName Value="rx"/>
+        <PackageName Value="SynEdit"/>
       </Item2>
       <Item3>
-        <PackageName Value="SynEdit"/>
-      </Item3>
-      <Item4>
         <PackageName Value="LCL"/>
-      </Item4>
+      </Item3>
     </RequiredPackages>
     <Units Count="4">
       <Unit0>
@@ -82,7 +79,6 @@
         <ComponentName Value="FormLua"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <UnitName Value="txtworker_main"/>
       </Unit1>
       <Unit2>
         <Filename Value="luasyntax.pas"/>

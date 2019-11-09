@@ -540,44 +540,6 @@ object FormLua: TFormLua
       LineHighlightColor.Background = clNone
       LineHighlightColor.Foreground = clNone
       LineHighlightColor.FrameEdges = sfeAround
-      inline SynLeftGutterPartList1: TSynGutterPartList
-        object SynGutterMarks1: TSynGutterMarks
-          Width = 24
-          MouseActions = <>
-        end
-        object SynGutterLineNumber1: TSynGutterLineNumber
-          Width = 17
-          MouseActions = <>
-          MarkupInfo.Background = clBtnFace
-          MarkupInfo.Foreground = clNone
-          MarkupInfo.FrameEdges = sfeAround
-          DigitCount = 2
-          ShowOnlyLineNumbersMultiplesOf = 1
-          ZeroStart = False
-          LeadingZeros = False
-        end
-        object SynGutterChanges1: TSynGutterChanges
-          Width = 4
-          MouseActions = <>
-          ModifiedColor = 59900
-          SavedColor = clGreen
-        end
-        object SynGutterSeparator1: TSynGutterSeparator
-          Width = 2
-          MouseActions = <>
-          MarkupInfo.Background = clWhite
-          MarkupInfo.Foreground = clGray
-          MarkupInfo.FrameEdges = sfeAround
-        end
-        object SynGutterCodeFolding1: TSynGutterCodeFolding
-          MouseActions = <>
-          MarkupInfo.Background = clNone
-          MarkupInfo.Foreground = clGray
-          MarkupInfo.FrameEdges = sfeAround
-          MouseActionsExpanded = <>
-          MouseActionsCollapsed = <>
-        end
-      end
     end
     object Memo1: TMemo
       Left = 0
@@ -831,35 +793,6 @@ object FormLua: TFormLua
     Filter = 'csv|*.csv|text|*.txt|text and csv|*.sav;*.txt|all files|*.*'
     left = 56
     top = 200
-  end
-  object StrHolder1: TStrHolder
-    Capacity = 64
-    Macros = <>
-    left = 352
-    top = 160
-    StrData = (
-      ''
-      '477269645f436c65617228293b'
-      '7478743d47657448747470546578742827687474703a2f2f7777772e6461756d2e6e657427293b'
-      '6966206e6f7420747874207468656e'
-      '777269746528276572726f722729'
-      '656e643b'
-      '7265673d52656745785f4e65772827283f69293c7370616e285c5c732b293f636c6173733d5c227478745f69737375655c223e285c5c732b293f3c6120687265663d5c225b5e5c225d2b5c2220636c6173733d5c225b5e5c225d2b5c223e285c5c732b293f285c5c532b2927293b'
-      '7265733d52656745785f4d61746368416c6c287265672c747874293b'
-      '786d61783d7265735b27436f6c275d3b'
-      '796d61783d7265735b27526f77275d3b'
-      '666f7220693d302c796d617820646f'
-      '666f72206a3d302c786d617820646f'
-      '20206b65793d7265735b746f737472696e672869292e2e272c272e2e746f737472696e67286a295d3b'
-      '20206966206b6579207468656e'
-      '20202020477269645f56616c7565286a2c692c6b6579293b'
-      '2020656c7365'
-      '20202020627265616b'
-      '2020656e643b'
-      '656e643b'
-      '656e643b'
-      '52656745785f44656c65746528726567293b2020'
-    )
   end
   object SynCompletion1: TSynCompletion
     ItemList.Strings = (

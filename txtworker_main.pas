@@ -6,8 +6,9 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, SynEdit, SynHighlighterAny, SynCompletion,
-  StrHolder, Forms, Controls, Graphics, Dialogs, Grids, Menus, ActnList,
-  StdActns, StdCtrls, ExtCtrls, types, LCLType, OMultiPanel;
+  SynGutterBase, SynGutterMarks, SynGutterLineNumber, SynGutterChanges,
+  SynGutter, SynGutterCodeFolding, Forms, Controls, Graphics, Dialogs, Grids,
+  Menus, ActnList, StdActns, StdCtrls, ExtCtrls, types, LCLType, OMultiPanel;
 
 type
 
@@ -80,7 +81,6 @@ type
     PopupMenuGrid: TPopupMenu;
     SaveDialog1: TSaveDialog;
     EditPathDlg: TSelectDirectoryDialog;
-    StrHolder1: TStrHolder;
     SynEdit1: TSynEdit;
     SynCompletion1: TSynCompletion;
     WorkGrid: TStringGrid;
@@ -239,7 +239,7 @@ begin
     try
       Position:=poOwnerFormCenter;
       if ShowModal=mrYes then
-        SynEdit1.Lines.Text:=StrHolder1.Strings.Text;
+        SynEdit1.Lines.Text:=''; //StrHolder1.Strings.Text;
     finally
       Free;
     end;
